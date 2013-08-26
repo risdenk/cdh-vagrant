@@ -1,0 +1,11 @@
+{
+  "name": "cloudera-manager",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "description": "Sets up a cloudera manager server",
+  "default_attributes": {
+  },
+  "run_list": [
+    "recipe[cloudera-manager]"
+  ]
+}
