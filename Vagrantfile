@@ -26,7 +26,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   boxes.each do |opts|
     config.vm.define opts[:name] do |vmconfig|
       vmconfig.vm.box = "ubuntu-precise-64"
-      #vmconfig.vm.box_url = "http://developer.nrel.gov/downloads/vagrant-boxes/CentOS-6.4-x86_64-v20130427.box"
+      vmconfig.vm.box_url = "http://files.vagrantup.com/precise64.box"
 
       vmconfig.vm.provider :virtualbox do |vb|
         vb.customize ["modifyvm", :id, "--memory", 512] # RAM allocated to each VM
